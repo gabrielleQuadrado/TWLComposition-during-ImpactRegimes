@@ -18,7 +18,7 @@ Main script for quantifying the TWL relative composition during the swash, colli
    ii) creation of figures to display results;  
    iii) assignment of percentile ranks to TWL elevations matching each regime threshold using the ECDF of hourly TWL.
 
-2. **[`datasets/`](datasets/)**
+2. **[`datasets`](datasets/)**
 Input data required by the main script.
          - **`duck2025_hourly_shoaledwaves.mat`**  
      Contains the structure variable `hourlyData` with fields:
@@ -59,12 +59,12 @@ Input data required by the main script.
      | `mean_slope`    | Mean beach slope |
      | `feature_type`  | 1 = shoreline; 2 = dune toe; 3 = dune crest |
 
-3. **[`functions/`](functions/)**  
+3. **[`functions`](functions/)**  
    Contains supporting MATLAB functions used in the main script.
 
    | Function | Description |
    |-----------|-------------|
-   | `CalcStockdonR2.m` | Calculates wave runup using the **Stockdon et al. (2006)** empirical formula. |
+   | `CalcStockdonR2.m` | Calculates wave runup using the Stockdon et al. (2006) empirical model. |
    | `overThresholdContribution_byProfile.m` | Main function that quantifies TWL contributions during each regime. A schematic of this workflow is shown in Figure 1 below. |
    | `plotTWLCompositionRegimes.m` | Generates and saves figures showing TWL relative composition results. |
    | `thresholdWLPercentiles.m` | Computes percentile ranks of TWL elevations corresponding to regime thresholds (swash, collision, overtopping, inundation). |
@@ -82,9 +82,9 @@ If you use this repository or the associated data/products, please cite the repo
 
 ## References
 
-- Doran KS, Long JW, Birchler JJ, Brenner OT, Hardy MW, Morgan KLM, Stockdon HF and Torres ML (2020) *Data Release - Lidar-derived Beach Morphology (Dune Crest, Dune Toe, and Shoreline) for U.S. Sandy Coastlines.* St. Petersburg, FL: **USGS**. Retrieved from https://coastal.er.usgs.gov/data-release/doi-F7GF0S0Z/
-- Quadrado GP and Serafin KA (2024) *The Timing, Magnitude, and Relative Composition of Extreme Total Water Levels Vary Seasonally Along the U.S. Atlantic Coast.* **Journal of Geophysical Research: Oceans** 129(9), e2023JC020557. https://doi.org/10.1029/2023JC020557. 
-- Sallenger AH (2000) *Storm Impact Scale for Barrier Islands*. **Journal of Coastal Research** 16(3), 890–895.
-- Stockdon HF, Holman RA, Howd PA, and Sallenger AH (2006) *Empirical parameterization of setup, swash, and runup.* **Coastal Engineering** 53(7), 573–588. https://doi.org/10.1016/J.COASTALENG.2005.1
+- Doran KS, Long JW, Birchler JJ, Brenner OT, Hardy MW, Morgan KLM, Stockdon HF and Torres ML (2020) *Data Release - Lidar-derived Beach Morphology (Dune Crest, Dune Toe, and Shoreline) for U.S. Sandy Coastlines.* St. Petersburg, FL: USGS. Retrieved from https://coastal.er.usgs.gov/data-release/doi-F7GF0S0Z/
+- Quadrado GP and Serafin KA (2024) *The Timing, Magnitude, and Relative Composition of Extreme Total Water Levels Vary Seasonally Along the U.S. Atlantic Coast.* Journal of Geophysical Research: Oceans 129(9), e2023JC020557. https://doi.org/10.1029/2023JC020557. 
+- Sallenger AH (2000) *Storm Impact Scale for Barrier Islands*. Journal of Coastal Research 16(3), 890–895.
+- Stockdon HF, Holman RA, Howd PA, and Sallenger AH (2006) *Empirical parameterization of setup, swash, and runup.* Coastal Engineering 53(7), 573–588. https://doi.org/10.1016/J.COASTALENG.2005.1
 ---
 
