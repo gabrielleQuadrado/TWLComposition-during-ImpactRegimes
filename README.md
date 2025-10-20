@@ -1,25 +1,83 @@
 # TWLComposition-during-ImpactRegimes
-Data release to the paper "Total Water Level Driving Processes Influence the Potential for Coastal Change along United States Coastlines"
+Data release accompanying the paper "Total Water Level Driving Processes Influence the Potential for Coastal Change along United States Coastlines"
 
-The script provided in this repository is used to reproduce the analysis describred in Section 2.1 of the manuscript and illustrated in the figure below at an example station (i.e., Duck, NC). In this script, the user can determine the relative contribution of individual water level components to the total water level (TWL) during Sallenger's (2000) Storm Impact Scale Regimes swash, collision, overtopping, and inundation. The script provides the TWL relative composition during each impact regime averaged across years at each individual beach profile and averaged across beach profiles during impact regimes. This data repository contains the following: 
+## Overview
+This repository provides the script and datasets used to reproduce the analysis described in **Section 2.1** of the manuscript and illustrated for an example station (**Duck, NC**).
 
-1) [Main Script](TWLcomposition_byProfile_wrapper.mlx) - main script used to quantify the TWL relative composition during the swash, collision, overtopping, and inundation regimes at the example station Duck, NC. The script is structured in three main components: i. quantification of TWL relative composition during impact regimes, ii. creation of figures to display results, and iii. assignment of percentile ranks to TWL elevations matching each regime threshold based on the empirical cumulative distribution function of hourly TWL data.
-2) [Datasets](datasets) - contains input data used in the 'TWLcomposition_byProfile_wrapper.mlx' script, where:
-       - 'duck2025_hourly_shoaledwaves.mat': contains structure variable 'hourlyData', with the following fields:
-           tide = astronomical tides (m)
-           wl = original NOAA water level record (m)
-           seasonal = seasonality (m)
-           msl = relative sea level + sea level anomalies (m)
-           time = datenum time
-           swh = linearly backshoaled significant wave height (m), based on GOW2.0 data
-           tp = peak wave period (s)
-           ss = storm surge (m)
-           r2 = wave runup (m), computed using a 0.05 mean beach slope value (recalculated based on individual beach profiles' mean beach slopes)
-           setup = wave setup (m), computed using a 0.05 mean beach slope value (recalculated based on individual beach profiles' mean beach slopes)
-           twl = total water level (m)
-           swl = still water level (m)
-           residual = residual signal (m), based on the difference between the measured and reconstructed SWL
+This MATLAB script quantifies the relative contribution of individual water level components to the total water level (TWL) during Sallenger's (2000) Storm Impact Scale Regimes swash, collision, overtopping, and inundation. Outputs include: 
+- TWL relative composition for each impact regime, averaged across years at each individual beach profile.
+- TWL relative composition averaged across beach profiles during impact regimes at the example station.
 
-   A more detailed description of the above fields can be found in the Methods & Datasets section of this manuscript and in Quadrado & Serafin (2024).       
-        
-       - 'morphology_NorthCarolinaDuck.csv': standard deviation of swash impact hours per year
+---
+
+## Repository Contents
+
+1. **[`TWLcomposition_byProfile_wrapper.mlx`](TWLcomposition_byProfile_wrapper.mlx)**
+Main script for quantifying the TWL relative composition during the swash, collision, overtopping, and inundation regimes at the example station Duck, NC. The script is organized in three parts:
+   i) quantification of TWL relative composition during impact regimes;  
+   ii) creation of figures to display results;  
+   iii) assignment of percentile ranks to TWL elevations matching each regime threshold using the ECDF of hourly TWL.
+
+2. **[`datasets/`](datasets/)**
+Input data required by the main script.
+         - **`duck2025_hourly_shoaledwaves.mat`**  
+     Contains the structure variable `hourlyData` with fields:
+
+     | Field      | Description |
+     |------------|-------------|
+     | `tide`     | Astronomical tide (m) |
+     | `wl`       | Original NOAA water level record (m) |
+     | `seasonal` | Seasonal signal (m) |
+     | `msl`      | Relative mean sea level + sea level anomalies (m) |
+     | `time`     | MATLAB `datenum` time |
+     | `swh`      | Linearly back-shoaled significant wave height (m, from GOW2.0) |
+     | `tp`       | Peak wave period (s) |
+     | `ss`       | Storm surge (m) |
+     | `r2`       | Wave runup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
+     | `setup`    | Wave setup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
+     | `twl`      | Total water level (m) |
+     | `swl`      | Still water level (m) |
+     | `residual` | Residual signal (m), difference between measured and reconstructed SWL |
+
+     *More detail is provided in the manuscript’s **Methods & Datasets** section and in Quadrado & Serafin (2024).*
+
+   - **`morphology_NorthCarolinaDuck.csv`**  
+     Morphological profile data from the **2018-308-DD** LiDAR survey (U.S. Geological Survey; Doran et al., 2020).
+
+     | Column          | Description |
+     |-----------------|-------------|
+     | `state`         | U.S. state |
+     | `segment`       | Segment number |
+     | `profile`       | Profile number |
+     | `lon`           | Longitude |
+     | `lat`           | Latitude |
+     | `x`             | Cross-shore distance (m) |
+     | `z`          | Elevation (m) |
+     | `x_err`         | Error associated with `x` |
+     | `elev_err`      | Error associated with `z` |
+     | `beach_width`   | Beach width (m) |
+     | `mean_slope`    | Mean beach slope |
+     | `feature_type`  | 1 = shoreline; 2 = dune toe; 3 = dune crest |
+
+---
+
+## Citation
+
+If you use this repository or the associated data/products, please cite:
+
+> Quadrado, G., & Serafin, K. (2024). *The timing, magnitude, and relative composition of extreme total water levels vary seasonally along the U.S. Atlantic Coast.* **JGR Oceans**. https://doi.org/10.1029/2023JC020557
+
+And the associated manuscript for this repository:
+
+> Quadrado, G. P., & Serafin, K. (2025). *Total Water Level Driving Processes Influence the Potential for Coastal Change along United States Coastlines.* (manuscript associated with this data release). **DOI:** _add DOI when available_.
+
+---
+
+## References
+
+- Doran KS, Long JW, Birchler JJ, Brenner OT, Hardy MW, Morgan KLM, Stockdon HF and Torres ML (2020) *Data Release - Lidar-derived Beach Morphology (Dune Crest, Dune Toe, and Shoreline) for U.S. Sandy Coastlines.* St. Petersburg, FL: **USGS**. Retrieved from https://coastal.er.usgs.gov/data-release/doi-F7GF0S0Z/
+- Quadrado GP and Serafin KA (2024) *The Timing, Magnitude, and Relative Composition of Extreme Total Water Levels Vary Seasonally Along the U.S. Atlantic Coast.* **Journal of Geophysical Research: Oceans** 129(9), e2023JC020557. https://doi.org/10.1029/2023JC020557. 
+- Sallenger AH (2000) *Storm Impact Scale for Barrier Islands*. **Journal of Coastal Research** 16(3), 890–895. 
+
+---
+
