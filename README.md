@@ -47,7 +47,7 @@ Input data required by the main script.
 
 <sub><sup>†</sup> Hourly significant wave height and peak wave period were obtained from the **Global Ocean Waves version 2.0 (GOW2.0)** hindcast dataset (Pérez et al., 2017) and linearly back-shoaled to deep water.</sub>
 
-*More detail about the fields in `hourlyData` is provided in the manuscript’s **Methods & Datasets** section and in Quadrado & Serafin (2024).*
+*More details about the fields in `hourlyData` are provided in the manuscript’s Methods & Datasets section and in Quadrado & Serafin (2024).*
 
 
    - **`morphology_NorthCarolinaDuck.csv`**  
