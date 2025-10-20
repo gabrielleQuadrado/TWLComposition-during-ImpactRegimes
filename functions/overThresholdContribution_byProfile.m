@@ -2,7 +2,7 @@ function [allRegimesContribution,twl,dynamicSWL] = overThresholdContribution_byP
 % overThresholdContribution -  This function finds the relative contribution of TWL regarding
 %the hours over a given threshold. 
 %   INPUTS:
-% hourlyData = structured daily time series of data values
+% hourlyData = structured hourly time series of data values
 % sline =  mhhw relative to navd88
 % toe = dune toe height in meters
 % crest = dune crest height in meters
