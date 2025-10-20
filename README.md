@@ -29,22 +29,23 @@ Input data required by the main script.
          - **`duck2025_hourly_shoaledwaves.mat`**  
      Contains the structure variable `hourlyData` with fields:
 
-     | Field      | Description |
-     |------------|-------------|
-     | `tide`     | Astronomical tide (m) |
-     | `wl`       | Original NOAA water level record (m) |
-     | `seasonal` | Seasonal signal (m) |
-     | `msl`      | Relative mean sea level + sea level anomalies (m) |
-     | `time`     | MATLAB `datenum` time |
-     | `swh`      | Linearly back-shoaled significant wave height (m, from GOW2.0*) |
-     | `tp`       | Peak wave period (s, from GOW2.0*) |
-     | `ss`       | Storm surge (m) |
-     | `r2`       | Wave runup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
-     | `setup`    | Wave setup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
-     | `twl`      | Total water level (m) |
-     | `swl`      | Still water level (m) |
-     | `residual` | Residual signal (m), difference between measured and reconstructed SWL |
-     *Hourly significant wave height and peak wave period were obtained from the Global Ocean Waves version 2.0 (GOW2.0) hindcast dataset (Pérez et al., 2017), and linearly backshoaled to deep-water.
+| Field      | Description |
+|-------------|-------------|
+| `tide`     | Astronomical tide (m) |
+| `wl`       | Original NOAA water level record (m) |
+| `seasonal` | Seasonal signal (m) |
+| `msl`      | Relative mean sea level + sea level anomalies (m) |
+| `time`     | MATLAB `datenum` time |
+| `swh`      | Linearly back-shoaled significant wave height (m)<sup>†</sup> |
+| `tp`       | Peak wave period (s)<sup>†</sup> |
+| `ss`       | Storm surge (m) |
+| `r2`       | Wave runup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
+| `setup`    | Wave setup (m), computed using a 0.05 mean beach slope (recalculated per profile) |
+| `twl`      | Total water level (m) |
+| `swl`      | Still water level (m) |
+| `residual` | Residual signal (m), difference between measured and reconstructed SWL |
+
+<sub><sup>†</sup> Hourly significant wave height and peak wave period were obtained from the **Global Ocean Waves version 2.0 (GOW2.0)** hindcast dataset (Pérez et al., 2017) and linearly back-shoaled to deep water.</sub>
 
      *More detail is provided in the manuscript’s **Methods & Datasets** section and in Quadrado & Serafin (2024).*
     
