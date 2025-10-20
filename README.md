@@ -8,10 +8,11 @@ This MATLAB script quantifies the relative contribution of individual water leve
 - TWL relative composition for each impact regime, averaged across years at each individual beach profile.
 - TWL relative composition averaged across beach profiles during impact regimes at the example station.
 
-  <p align="center">
-  <img src="(workflow_GitHub_readme.png" alt="Workflow illustrating TWL relative composition during impact regimes analysis" width="60%">
+<p align="center">
+  <img src="workflow_GitHub_readme.png" alt="Workflow illustrating TWL relative composition during impact regimes analysis" width="60%">
 </p>
-<sub><em>Figure 1. Steps for determining the relative contribution of individual water level components to the total water level (TWL) during storm impact regimes in Charleston, OR. Colors in the contribution plots represent processes as follows: relative sea level (ηRSL, dark blue), astronomical tides (ηA, purple), seasonality (ηSE, yellow), sea level anomalies (ηSLA, orange), storm surge (ηSS, green), residual (ηresidual, red), wave runup (R2%, light blue), for swash, collision and overtopping, and wave setup (<η>, pink), for inundation. Panels illustrate: A) alongshore-varying morphological thresholds at 100-m spaced beach profiles, B) computation of hourly TWL time series at individual beach profiles, C) classification of hourly TWLs into storm impact regimes, D) wave runup magnitudes during collision at individual beach profiles (colored dots) and their annual averages across profiles (black dots), E) TWL relative composition during collision at individual beach profiles, and F) TWL relative composition averaged across beach profiles during swash, collision, overtopping, and inundation..</em></sub>
+
+<p align="center"><sub><em>Figure 1. Steps for determining the relative contribution of individual water level components to the total water level (TWL) during storm impact regimes in Charleston, OR. Colors in the contribution plots represent processes as follows: relative sea level (η<sub>RSL</sub>, dark blue), astronomical tides (η<sub>A</sub>, purple), seasonality (η<sub>SE</sub>, yellow), sea level anomalies (η<sub>SLA</sub>, orange), storm surge (η<sub>SS</sub>, green), residual (η<sub>residual</sub>, red), wave runup (R<sub>2%</sub>, light blue) for swash, collision, and overtopping, and wave setup (&lt;η&gt;, pink) for inundation. Panels illustrate: A) alongshore-varying morphological thresholds at 100-m spaced beach profiles, B) computation of hourly TWL time series at individual beach profiles, C) classification of hourly TWLs into storm impact regimes, D) wave runup magnitudes during collision at individual beach profiles (colored dots) and their annual averages across profiles (black dots), E) TWL relative composition during collision at individual beach profiles, and F) TWL relative composition averaged across beach profiles during swash, collision, overtopping, and inundation.</em></sub></p>
 
 ---
 
