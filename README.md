@@ -8,6 +8,8 @@ This MATLAB script quantifies the relative contribution of individual water leve
 - TWL relative composition for each impact regime, averaged across years at each individual beach profile.
 - TWL relative composition averaged across beach profiles during impact regimes at the example station.
 
+![Workflow illustrating TWL composition analysis](fig2_workflow_002.pdf)
+
 ---
 
 ## Repository Contents
