@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1079861074.svg)](https://doi.org/10.5281/zenodo.17418446)
+
 # TWLComposition-during-ImpactRegimes
 Data release accompanying the paper "Total Water Level Driving Processes Influence the Potential for Coastal Change along United States Coastlines"
 
