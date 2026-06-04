@@ -87,7 +87,7 @@ Input data required by the main script.
 
 If you use this repository or the associated data/products, please cite the repository and its associated manuscript as follows:
 
-> Quadrado GP and Serafin KA (2025). *Total Water Level Driving Processes Influence the Potential for Coastal Change along United States Coastlines.* (manuscript associated with this data release). **DOI:[https://doi.org/10.1017/cft.2025.10018].
+>Quadrado GP, Serafin KA. *Total water level driving processes influence the potential for coastal change along United States coastlines.* Cambridge Prisms: Coastal Futures. 2025;3:e28. *DOI:[https://doi.org/10.1017/cft.2025.10018].
 
 ---
 
